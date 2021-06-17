@@ -1,5 +1,29 @@
 import React from 'react';
+import Accordion from "./components/Accordion";
+
+
+const items = [
+    {
+        title: 'What is React?',
+        content: 'React is a front end JS framework'
+    },
+    {
+        title: 'What is use of React?',
+        content: 'React is a favourite library among engineers'
+    },
+    {
+        title: 'How do you use React?',
+        content: 'You use  React by crating Components'
+    }
+];
 
 export default () => {
-    return <h1>Widgets App</h1>
+
+
+
+    return (
+        <div>
+            <Accordion items={items}/>
+        </div>
+    );
 };
